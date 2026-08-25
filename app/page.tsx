@@ -1,3 +1,5 @@
+import ContactForm from './contact-form';
+
 const navItems = [
   ['AI Readiness', '#readiness'], ['AI Skills Workshops', '#skills'],
   ['AI Learning Circles', '#circles'], ['Emotional Intelligence', '#emotional-intelligence'],
@@ -173,7 +175,7 @@ export default function Home() {
         <div className="challenge-cloud">{['Adoption is inconsistent', 'Value is unclear', 'People are anxious', 'Training has not changed behavior', 'Use cases remain generic', 'Standards are missing', 'Processes are fragmented', 'Leaders need evidence'].map(item => <span key={item}>{item}</span>)}</div>
       </section>
 
-      <section className="final-cta" id="contact"><div className="final-glow" aria-hidden="true" /><p className="eyebrow">The human capability behind AI performance</p><h2>Give people more than access.<br /><span>Give them the capability to use AI well.</span></h2><p>Build the skills, emotional intelligence, healthy environment and change infrastructure required to turn AI investment into responsible, sustainable performance.</p><a className="button primary" href="mailto:hello@grandstrategy.llc">Book our AI readiness diagnostic</a></section>
+      <section className="final-cta contact-section" id="contact"><div className="final-glow" aria-hidden="true" /><div className="contact-intro"><p className="eyebrow">The human capability behind AI performance</p><h2>Give people more than access.<br /><span>Give them the capability to use AI well.</span></h2><p>Tell us where you want to begin. We will use your selected topic as the subject line so your enquiry reaches the right conversation quickly.</p></div><ContactForm /></section>
 
       <footer><a className="brand" href="#top"><Brand /><span>Grand Strategy</span></a><p>Human-centered transformation for the AI era.</p><div><a href="#readiness">AI readiness</a><a href="#skills">AI skills</a><a href="#circles">Learning Circles</a><a href="#about">About</a></div><p className="copyright">© {new Date().getFullYear()} Grand Strategy Consulting LLC</p></footer>
     </main>

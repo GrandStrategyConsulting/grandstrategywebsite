@@ -119,6 +119,9 @@ export default function Home() {
           <div><p className="kicker">The challenge is not access</p><h2 id="problem-title">Your workforce does not need another AI demonstration.</h2><p className="lead">Showing people what AI can do is not the same as preparing them to use it responsibly, confidently and consistently.</p><blockquote>AI adoption is emotional before it is technical.</blockquote></div>
           <div className="needs-card"><p>Employees need:</p><ul>{needs.map(item => <li key={item}>{item}</li>)}</ul></div>
         </div>
+        <div className="video-feature">
+          <iframe src="https://www.youtube-nocookie.com/embed/g-RbwujOFfs?rel=0" title="Grand Strategy Consulting video" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen />
+        </div>
         <p className="section-note">Without these conditions, organizations may have AI access but still experience scattered experimentation, inconsistent quality, low trust, unmanaged risk and wasted investment.</p>
       </section>
 

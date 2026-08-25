@@ -126,11 +126,10 @@ export default function Home() {
         <div className="pathway-head"><div><div className="section-label">The transformation pathway</div><p className="kicker">An integrated workforce system</p><h2 id="pathway-title">From access to readiness.<br />From training to performance.</h2></div><p>Employee engagement, emotional intelligence, practical AI capability and organizational change, connected in one pathway.</p></div>
         <div className="pathway-line" aria-hidden="true">{pathway.map(step => <span key={step.number}>{step.number}</span>)}</div>
         <div className="pathway-list">
-          {pathway.map((step, index) => (
+          {pathway.map(step => (
             <article className={`pathway-card ${step.tone}`} id={step.id} key={step.number}>
               <div className="step-meta"><span>{step.number}</span><p>{step.kicker}</p></div>
-              <div className="step-copy"><h3>{step.title}</h3><p className="step-intro">{step.text}</p><ul>{step.bullets.map(item => <li key={item}>{item}</li>)}</ul><p className="step-close">{step.close}</p><a className="arrow-link" href="#contact">{step.cta} <span aria-hidden="true">↗</span></a></div>
-              <div className="step-orbit" aria-hidden="true"><span>{index < 4 ? `0${index + 2}` : 'AI'}</span></div>
+              <div className="step-copy"><h3>{step.title}</h3><p className="step-intro">{step.text}</p>{step.id === 'emotional-intelligence' && <div className="step-certification"><img src="/msceit2-certified.png" alt="MHS MSCEIT 2 Certified" /></div>}<ul>{step.bullets.map(item => <li key={item}>{item}</li>)}</ul><p className="step-close">{step.close}</p><a className="arrow-link" href="#contact">{step.cta} <span aria-hidden="true">↗</span></a></div>
             </article>
           ))}
         </div>

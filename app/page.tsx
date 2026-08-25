@@ -179,7 +179,9 @@ export default function Home() {
 
       <section className="book-offer section-pad" id="discovery" aria-labelledby="book-offer-title">
         <div className="book-cover-shell">
-          <img src="/stop-wasting-time-with-ai.png" alt="Stop Wasting Time With AI book cover by Zena Collins" />
+          <a className="book-cover-link" href="https://www.stopwastingtimewithai.com/" target="_blank" rel="noreferrer" aria-label="Visit the Stop Wasting Time With AI website">
+            <img src="/stop-wasting-time-with-ai.png" alt="Stop Wasting Time With AI book cover by Zena Collins" />
+          </a>
         </div>
         <div className="book-offer-copy">
           <div className="section-label">A complimentary resource for your AI journey</div>

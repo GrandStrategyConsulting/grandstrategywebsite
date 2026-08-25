@@ -132,7 +132,7 @@ export default function Home() {
           {pathway.map(step => (
             <article className={`pathway-card ${step.tone}`} id={step.id} key={step.number}>
               <div className="step-meta"><span>{step.number}</span><p>{step.kicker}</p></div>
-              <div className="step-copy"><h3>{step.title}</h3><p className="step-intro">{step.text}</p>{step.id === 'emotional-intelligence' && <div className="step-certification"><img src="/msceit2-certified.png" alt="MHS MSCEIT 2 Certified" /></div>}<ul>{step.bullets.map(item => <li key={item}>{item}</li>)}</ul><p className="step-close">{step.close}</p><a className="arrow-link" href="#contact">{step.cta} <span aria-hidden="true">↗</span></a></div>
+              <div className="step-copy"><h3>{step.title}</h3><p className="step-intro">{step.text}</p>{step.id === 'emotional-intelligence' && <div className="step-media-row"><div className="step-certification"><img src="/msceit2-certified.png" alt="MHS MSCEIT 2 Certified" /></div><div className="step-playlist"><iframe src="https://www.youtube-nocookie.com/embed/videoseries?list=PLcaD4ZHbCmLtK9BBzSVN3bbCSznDAx8Ys&rel=0" title="MSCEIT emotional intelligence video playlist" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen /></div></div>}<ul>{step.bullets.map(item => <li key={item}>{item}</li>)}</ul><p className="step-close">{step.close}</p><a className="arrow-link" href="#contact">{step.cta} <span aria-hidden="true">↗</span></a></div>
             </article>
           ))}
         </div>

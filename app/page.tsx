@@ -175,6 +175,20 @@ export default function Home() {
         <div className="challenge-cloud">{['Adoption is inconsistent', 'Value is unclear', 'People are anxious', 'Training has not changed behavior', 'Use cases remain generic', 'Standards are missing', 'Processes are fragmented', 'Leaders need evidence'].map(item => <span key={item}>{item}</span>)}</div>
       </section>
 
+      <section className="book-offer section-pad" id="discovery" aria-labelledby="book-offer-title">
+        <div className="book-cover-shell">
+          <img src="/stop-wasting-time-with-ai.png" alt="Stop Wasting Time With AI book cover by Zena Collins" />
+        </div>
+        <div className="book-offer-copy">
+          <div className="section-label">A complimentary resource for your AI journey</div>
+          <p className="kicker">Book a discovery call</p>
+          <h2 id="book-offer-title">Get a free copy of <em>Stop Wasting Time With AI.</em></h2>
+          <p>Schedule a discovery call with Grand Strategy and receive Zena Collins&apos; practical, emotionally intelligent guide to using AI well.</p>
+          <p className="book-note">Choose a time that works for you. We will follow up with details about your complimentary copy.</p>
+          <a className="button primary" href="https://calendar.app.google/p8DynbYQdBA4Kxs56" target="_blank" rel="noreferrer">Book a discovery call <span aria-hidden="true">↗</span></a>
+        </div>
+      </section>
+
       <section className="final-cta contact-section" id="contact"><div className="final-glow" aria-hidden="true" /><div className="contact-intro"><p className="eyebrow">The human capability behind AI performance</p><h2>Give people more than access.<br /><span>Give them the capability to use AI well.</span></h2><p>Tell us where you want to begin. We will use your selected topic as the subject line so your enquiry reaches the right conversation quickly.</p></div><ContactForm /></section>
 
       <footer><a className="brand" href="#top"><Brand /><span>Grand Strategy</span></a><p>Human-centered transformation for the AI era.</p><div><a href="#readiness">AI readiness</a><a href="#skills">AI skills</a><a href="#circles">Learning Circles</a><a href="#about">About</a></div><p className="copyright">© {new Date().getFullYear()} Grand Strategy Consulting LLC</p></footer>

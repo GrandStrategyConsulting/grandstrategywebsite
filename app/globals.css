@@ -62,6 +62,8 @@ h2 { margin: 0; max-width: 910px; font-size: clamp(40px,5vw,76px); line-height: 
 .needs-card ul { display: grid; gap: 0; padding: 0; margin: 0; list-style: none; }
 .needs-card li { position: relative; padding: 15px 0 15px 27px; border-top: 1px solid #e5e7e7; color: #344456; line-height: 1.4; }
 .needs-card li::before { content: '↗'; position: absolute; left: 0; color: #1daadd; }
+.video-feature { width: min(100%,1100px); margin: 80px auto 0; padding: 10px; border: 1px solid rgba(16,31,52,.16); background: #071326; box-shadow: 0 30px 80px rgba(20,35,50,.18); }
+.video-feature iframe { display: block; width: 100%; aspect-ratio: 16/9; border: 0; background: #050c19; }
 .section-note { max-width: 920px; margin: 80px 0 0 auto; padding-top: 26px; border-top: 1px solid #cfd5d8; color: #586879; font-size: 18px; line-height: 1.6; }
 
 .pathway { overflow: hidden; background: #071326; }
@@ -175,7 +177,7 @@ footer > p { font-size: 13px; }footer > div { display: flex; gap: 24px; }footer 
   footer { grid-template-columns: 1fr; }footer > div { grid-column: auto; flex-wrap: wrap; }.copyright { grid-column: auto; }
 }
 @media (max-width:560px) {
-  .section-pad { padding: 76px 20px; }.section-label { margin-bottom: 24px; }h2 { font-size: 36px; line-height: 1.08; }.lead { font-size: 17px; }.needs-card { padding: 28px 24px; }
+  .section-pad { padding: 76px 20px; }.section-label { margin-bottom: 24px; }h2 { font-size: 36px; line-height: 1.08; }.lead { font-size: 17px; }.needs-card { padding: 28px 24px; }.video-feature { margin-top: 50px; padding: 5px; }
   .problem blockquote { margin-top: 44px; }.step-copy ul { grid-template-columns: 1fr; }.pathway-card { padding: 32px 23px; }.step-certification { width: 170px; padding: 8px; }
   .method-steps article { grid-template-columns: 35px 1fr; gap: 14px; }.method-steps article p { grid-column: 2; }.outcome-grid { grid-template-columns: 1fr; }.outcome-grid > div { min-height: 140px; }
   .experience-stats { grid-template-columns: 1fr; }.experience-stats > div,.experience-stats > div:nth-child(even) { border-right: 1px solid #bdc7ca; }.experience-stats > div:nth-last-child(-n+2) { border-bottom: 0; }.experience-stats > div:last-child { border-bottom: 1px solid #bdc7ca; }

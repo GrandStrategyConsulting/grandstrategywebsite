@@ -51,6 +51,13 @@ const pathway = [
   },
 ];
 
+const credentialAwards = [
+  { credential: 'SHRM-CP / SHRM-SCP', credits: '11 Professional Development Credits (PDCs)', status: 'Approved', emphasized: true },
+  { credential: 'ATD CPTD / APTD', credits: '11 Recertification Points', status: 'Approved', emphasized: true },
+  { credential: 'APA', credits: '11 Continuing Education Credits', status: 'Approved', emphasized: false },
+  { credential: 'ICF', credits: '7 Core Competency + 4 Resource Development hours', status: 'Approved', emphasized: false },
+];
+
 const method = [
   ['See', 'Measure the current reality through surveys, interviews, workflow analysis and employee insight.'],
   ['Understand', 'Identify the emotional, cultural, operational and capability barriers affecting readiness.'],
@@ -132,7 +139,23 @@ export default function Home() {
           {pathway.map(step => (
             <article className={`pathway-card ${step.tone}`} id={step.id} key={step.number}>
               <div className="step-meta"><span>{step.number}</span><p>{step.kicker}</p></div>
-              <div className="step-copy"><h3>{step.title}</h3><p className="step-intro">{step.text}</p>{step.id === 'emotional-intelligence' && <div className="step-media-row"><div className="step-certification"><img src="/msceit2-certified.png" alt="MHS MSCEIT 2 Certified" /></div><div className="step-playlist"><iframe src="https://www.youtube-nocookie.com/embed/videoseries?list=PLcaD4ZHbCmLtK9BBzSVN3bbCSznDAx8Ys&rel=0" title="MSCEIT emotional intelligence video playlist" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen /></div></div>}<ul>{step.bullets.map(item => <li key={item}>{item}</li>)}</ul><p className="step-close">{step.close}</p><a className="arrow-link" href="#contact">{step.cta} <span aria-hidden="true">↗</span></a></div>
+              <div className="step-copy">
+                <h3>{step.title}</h3>
+                <p className="step-intro">{step.text}</p>
+                {step.id === 'emotional-intelligence' && <>
+                  <div className="step-media-row"><div className="step-certification"><img src="/msceit2-certified.png" alt="MHS MSCEIT 2 Certified" /></div><div className="step-playlist"><iframe src="https://www.youtube-nocookie.com/embed/videoseries?list=PLcaD4ZHbCmLtK9BBzSVN3bbCSznDAx8Ys&rel=0" title="MSCEIT emotional intelligence video playlist" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen /></div></div>
+                  <div className="credential-awards">
+                    <h4>Professional credential credits awarded</h4>
+                    <table aria-label="MSCEIT 2 credential credits awarded">
+                      <thead><tr><th>Credential</th><th>Credits Awarded</th><th>Status</th></tr></thead>
+                      <tbody>{credentialAwards.map(award => <tr key={award.credential}><td data-label="Credential">{award.emphasized ? <strong>{award.credential}</strong> : award.credential}</td><td data-label="Credits Awarded">{award.emphasized ? <strong>{award.credits}</strong> : award.credits}</td><td data-label="Status"><span>{award.status}</span></td></tr>)}</tbody>
+                    </table>
+                  </div>
+                </>}
+                <ul>{step.bullets.map(item => <li key={item}>{item}</li>)}</ul>
+                <p className="step-close">{step.close}</p>
+                <a className="arrow-link" href="#contact">{step.cta} <span aria-hidden="true">↗</span></a>
+              </div>
             </article>
           ))}
         </div>

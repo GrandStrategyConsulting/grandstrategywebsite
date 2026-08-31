@@ -128,6 +128,16 @@ export default function Home() {
         </div>
       </section>
 
+      <section className="client-experience" aria-labelledby="client-experience-title">
+        <div className="client-experience-copy">
+          <p className="section-label">Client experience</p>
+          <h2 id="client-experience-title">Experience that sees beyond the tool.</h2>
+          <p>We bring multidisciplinary global experience in project management, people and organisational change, and learning and development across nonprofit, SME, Fortune 100 and FTSE 100 organisations.</p>
+          <p>We understand the process, people and performance challenges that sit behind the AI brief, so your solutions can create meaningful value in the work, not simply add another tool.</p>
+        </div>
+        <div className="client-logo-panel"><img src="/client-experience-logos.png" alt="Selected organisations and sectors represented in Grand Strategy Consulting's client experience" /></div>
+      </section>
+
       <section className="problem light-section section-pad" aria-labelledby="problem-title">
         <div className="section-label">The readiness gap</div>
         <div className="problem-grid">

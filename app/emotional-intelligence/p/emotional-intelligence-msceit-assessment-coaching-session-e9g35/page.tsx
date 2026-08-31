@@ -58,7 +58,7 @@ export const metadata: Metadata = {
 };
 
 function BrandMark() {
-  return <span className={styles.brandMark} aria-hidden="true"><img src="/grand-strategy-logo.png" alt="" /></span>;
+  return <span className={styles.brandMark} aria-hidden="true"><img src="/grand-strategy-mark-white.png" alt="" /></span>;
 }
 
 export default function MsceitCertificationPage() {

@@ -201,6 +201,7 @@ export default function Home() {
 
       <section className="experience section-pad" id="about" aria-labelledby="experience-title">
         <div className="experience-copy"><div className="section-label">Evidence and experience</div><p className="kicker">Grounded in real organizations</p><h2 id="experience-title">Transformation experience that connects what others treat separately.</h2><p>Technology, workforce capability, emotional intelligence, employee engagement and change, brought together through experience across corporate, healthcare, government, education, technology, creative and mission-led environments.</p><p>Grand Strategy brings master-level MSCEIT® 2 practitioner and trainer capability, the Six Dimensions framework and deep organizational-change practice to every engagement.</p></div>
+        <figure className="experience-credentials"><img src="/client-credentials.png" alt="Selected client and sector experience, including NHS, Consensus, Udemy, Cannes Lions, LinkedIn, EY, Yale, Apple and Caterpillar." /></figure>
         <div className="experience-stats">{experience.map(([number, label]) => <div key={number + label}><strong>{number}</strong><span>{label}</span></div>)}</div>
         <div className="team-panel" aria-labelledby="team-title">
           <div className="team-heading"><div><p className="kicker">The people behind the work</p><h3 id="team-title">Our team</h3></div><p>Practical AI adoption, emotional intelligence and organizational development expertise in one integrated team.</p></div>

@@ -114,8 +114,10 @@ h2 { margin: 0; max-width: 910px; font-size: clamp(40px,5vw,76px); line-height: 
 .outcome-grid { display: grid; grid-template-columns: repeat(3,1fr); border-top: 1px solid rgba(255,255,255,.16); border-left: 1px solid rgba(255,255,255,.16); }
 .outcome-grid > div { min-height: 180px; padding: 30px; border-right: 1px solid rgba(255,255,255,.16); border-bottom: 1px solid rgba(255,255,255,.16); background: linear-gradient(135deg,rgba(255,255,255,.025),transparent); }.outcome-grid span { color: var(--cyan); font-size: 10px; }.outcome-grid p { max-width: 290px; margin: 38px 0 0; color: #d7dfea; font-size: 18px; line-height: 1.45; }
 
-.experience { display: grid; grid-template-columns: minmax(0,1.1fr) minmax(430px,.9fr); gap: clamp(80px,11vw,180px); color: #112034; background: #e8eced; }
+.experience { display: grid; grid-template-columns: minmax(0,1.1fr) minmax(430px,.9fr); gap: 48px clamp(80px,11vw,180px); color: #112034; background: #e8eced; }
+.experience-copy,.experience-credentials,.experience-stats { grid-column: 1/-1; }.experience-copy { max-width: 850px; }
 .experience-copy > p:not(.kicker) { max-width: 760px; color: #536376; font-size: 17px; line-height: 1.65; }.experience-copy h2 { margin-bottom: 32px; }
+.experience-credentials { margin: 0; overflow: hidden; border: 1px solid rgba(21,52,83,.18); border-radius: 18px; background: #fff; box-shadow: 0 24px 60px rgba(24,44,68,.12); }.experience-credentials img { display: block; width: 100%; height: auto; }
 .experience-stats { display: grid; grid-template-columns: 1fr 1fr; align-self: center; }
 .experience-stats > div { min-height: 210px; padding: 28px; border-top: 1px solid #bdc7ca; border-left: 1px solid #bdc7ca; }.experience-stats > div:nth-child(even) { border-right: 1px solid #bdc7ca; }.experience-stats > div:nth-last-child(-n+2) { border-bottom: 1px solid #bdc7ca; }
 .experience-stats strong { display: block; color: #0a74a0; font-size: clamp(48px,5vw,78px); font-weight: 350; letter-spacing: -.06em; }.experience-stats span { display: block; margin-top: 25px; color: #516171; font-size: 13px; line-height: 1.5; }

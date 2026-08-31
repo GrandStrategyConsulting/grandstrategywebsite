@@ -2,7 +2,7 @@
 .header { position:relative; z-index:10; display:flex; align-items:center; gap:38px; min-height:94px; padding:0 clamp(24px,4.7vw,84px); border-bottom:1px solid rgba(255,255,255,.1); background:#050d1a; }
 .brand { display:flex; align-items:center; gap:14px; min-width:max-content; color:#fff; font-size:14px; letter-spacing:.19em; text-transform:uppercase; }
 .brandMark { position:relative; display:block; flex:0 0 48px; width:48px; height:52px; overflow:hidden; }
-.brandMark img { position:absolute; top:-7px; left:-16px; width:80px; max-width:none; height:auto; opacity:.94; filter:grayscale(1) contrast(3.2) brightness(1.25); mix-blend-mode:screen; }
+.brandMark img { position:absolute; top:-7px; left:-16px; width:80px; max-width:none; height:auto; opacity:1; filter:grayscale(1) brightness(2.8) contrast(3.5); mix-blend-mode:screen; }
 .header nav { display:flex; gap:clamp(16px,2vw,32px); margin-left:auto; }
 .header nav a { color:#b9c4d3; font-size:12px; transition:color .2s ease; }.header nav a:hover{color:#fff}
 .headerCta { padding:13px 18px; border:1px solid rgba(255,255,255,.38); border-radius:3px; font-size:11px; font-weight:700; letter-spacing:.08em; text-transform:uppercase; }

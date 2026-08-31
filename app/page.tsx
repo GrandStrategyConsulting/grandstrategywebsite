@@ -216,7 +216,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="final-cta contact-section" id="contact"><div className="final-glow" aria-hidden="true" /><div className="contact-intro"><p className="eyebrow">The human capability behind AI performance</p><h2>Give people more than access.<br /><span>Give them the capability to use AI well.</span></h2><p>Tell us where you want to begin. We will use your selected topic as the subject line so your enquiry reaches the right conversation quickly.</p></div><ContactForm /></section>
+      <section className="final-cta contact-section" id="contact"><div className="final-glow" aria-hidden="true" /><div className="contact-intro"><p className="eyebrow">The human capability behind AI performance</p><h2>Give people more than access.<br /><span>Give them the capability to use AI well.</span></h2><p>Tell us where you want to begin. Send us a message via the form. We look forward to speaking with you.</p></div><ContactForm /></section>
 
       <footer><a className="brand" href="#top"><Brand /><span>Grand Strategy</span></a><p>Human-centered transformation for the AI era.</p><div><a href="#readiness">AI readiness</a><a href="#skills">AI skills</a><a href="#circles">Learning Circles</a><a href="#about">About</a></div><p className="copyright">© {new Date().getFullYear()} Grand Strategy Consulting LLC</p></footer>
     </main>

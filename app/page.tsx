@@ -136,8 +136,7 @@ export default function Home() {
           <p>We understand the process, people and performance challenges that sit behind the AI brief, so your solutions can create meaningful value in the work, not simply add another tool.</p>
         </div>
         <div className="client-logo-panel">
-          <div className="client-logo-caption"><span>Selected client and sector experience</span><span>Global · Cross-sector · Multidisciplinary</span></div>
-          <img src="/client-experience-logos.png" alt="Selected organisations and sectors represented in Grand Strategy Consulting's client experience" />
+          <img src="/client-experience-logos-designed.png" alt="Selected client and sector experience, including healthcare, technology, creative, education and corporate organisations" />
         </div>
       </section>
 

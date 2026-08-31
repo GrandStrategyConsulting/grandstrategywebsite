@@ -91,7 +91,7 @@ const team = [
 ];
 
 function Brand() {
-  return <span className="brand-mark" aria-hidden="true"><i /><i /><i /><i /><i /><i /><i /></span>;
+  return <span className="brand-mark" aria-hidden="true"><img src="/grand-strategy-logo.png" alt="" /></span>;
 }
 
 export default function Home() {

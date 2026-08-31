@@ -135,9 +135,9 @@ export default function Home() {
           <p>We bring multidisciplinary global experience in project management, people and organisational change, and learning and development across nonprofit, SME, Fortune 100 and FTSE 100 organisations.</p>
           <p>We understand the process, people and performance challenges that sit behind the AI brief, so your solutions can create meaningful value in the work, not simply add another tool.</p>
         </div>
-        <div className="client-logo-gallery" role="img" aria-label="Selected organisations and sectors represented in Grand Strategy Consulting's client experience">
-          <div className="logo-window logo-window-one" /><div className="logo-window logo-window-two" /><div className="logo-window logo-window-three" />
-          <p>Selected client and sector experience</p>
+        <div className="client-logo-panel">
+          <div className="client-logo-caption"><span>Selected client and sector experience</span><span>Global · Cross-sector · Multidisciplinary</span></div>
+          <img src="/client-experience-logos.png" alt="Selected organisations and sectors represented in Grand Strategy Consulting's client experience" />
         </div>
       </section>
 

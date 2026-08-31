@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import MsceitGallery from './msceit-gallery';
 import styles from './page.module.css';
 
 const pagePath = '/emotional-intelligence/p/emotional-intelligence-msceit-assessment-coaching-session-e9g35';
@@ -12,7 +13,7 @@ const gallery = [
   ['/msceit2/msceit2-framework.png', 'MSCEIT 2 emotional intelligence framework'],
   ['/msceit2/certification-benefits.png', 'MSCEIT 2 certification benefits'],
   ['/msceit2/program-details.png', 'MSCEIT 2 program details'],
-];
+] as const;
 
 const credentialAwards = [
   ['SHRM-CP / SHRM-SCP', '11 Professional Development Credits (PDCs)'],
@@ -94,12 +95,7 @@ export default function MsceitCertificationPage() {
           <p className={styles.scheduleNote}>There is intentionally a day between live training sessions, giving participants time to integrate and practice the learning.</p>
         </div>
 
-        <div className={styles.gallery} aria-label="MSCEIT 2 certification gallery">
-          <figure className={styles.mainImage}><img src={gallery[0][0]} alt={gallery[0][1]} /></figure>
-          <div className={styles.thumbnails}>
-            {gallery.slice(1).map(([src, alt]) => <figure key={src}><img src={src} alt={alt} loading="lazy" /></figure>)}
-          </div>
-        </div>
+        <MsceitGallery images={gallery} />
       </section>
 
       <section className={styles.statement}>

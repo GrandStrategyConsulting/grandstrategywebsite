@@ -112,11 +112,19 @@ export default function Home() {
           <div className="hero-actions"><a className="button primary" href="#contact">Assess our AI readiness</a><a className="button text-link" href="#pathway">Explore the transformation pathway <span aria-hidden="true">↘</span></a></div>
           <p className="proof-line"><span>Human-centered</span><span>Tool-agnostic</span><span>Research-led</span><span>Built around real work</span></p>
         </div>
-        <div className="hero-visual" aria-label="Assess, build and sustain an AI-ready workforce with humans in the lead">
-          <div className="orbit orbit-one" /><div className="orbit orbit-two" />
-          <div className="node node-assess"><span>Assess</span></div><div className="node node-build"><span>Build</span></div><div className="node node-sustain"><span>Sustain</span></div>
-          <div className="connector connector-top" /><div className="connector connector-left" /><div className="connector connector-right" />
-          <div className="human-core"><span>Human<br />in the lead</span></div><span className="spark spark-one" /><span className="spark spark-two" /><span className="spark spark-three" />
+        <div className="hero-visual" aria-label="Five stages of the SUMMS methodology, with humans in the lead">
+          <svg className="summs-diagram" viewBox="0 0 800 800" role="img" aria-labelledby="summs-title summs-desc">
+            <title id="summs-title">Human in the Lead SUMMS methodology</title><desc id="summs-desc">Five connected hexagons labelled See, Understand, Make, Manage and Sustain surround a central hexagon labelled Human in the Lead.</desc>
+            <defs><linearGradient id="summs-stroke" x1="0" y1="0" x2="1" y2="1"><stop stopColor="#21c7ff"/><stop offset=".52" stopColor="#ffffff"/><stop offset="1" stopColor="#f16bdb"/></linearGradient><radialGradient id="summs-glow"><stop stopColor="#1a78ba" stopOpacity=".24"/><stop offset="1" stopColor="#0a1123" stopOpacity="0"/></radialGradient></defs>
+            <circle cx="400" cy="400" r="350" fill="url(#summs-glow)"/><circle className="diagram-orbit diagram-orbit-outer" cx="400" cy="400" r="280"/><circle className="diagram-orbit diagram-orbit-inner" cx="400" cy="400" r="190"/>
+            <g className="diagram-connectors" stroke="url(#summs-stroke)" strokeWidth="3"><line x1="400" y1="400" x2="400" y2="125"/><line x1="400" y1="400" x2="666" y2="314"/><line x1="400" y1="400" x2="565" y2="630"/><line x1="400" y1="400" x2="235" y2="630"/><line x1="400" y1="400" x2="134" y2="314"/></g>
+            <g className="diagram-node-group"><polygon className="diagram-node diagram-node-see" points="400,45 469,85 469,165 400,205 331,165 331,85"/><text x="400" y="132" className="diagram-label">SEE</text></g>
+            <g className="diagram-node-group"><polygon className="diagram-node diagram-node-understand" points="666,234 735,274 735,354 666,394 597,354 597,274"/><text x="666" y="312" className="diagram-label diagram-label-small">UNDERSTAND</text></g>
+            <g className="diagram-node-group"><polygon className="diagram-node diagram-node-make" points="565,550 634,590 634,670 565,710 496,670 496,590"/><text x="565" y="637" className="diagram-label">MAKE</text></g>
+            <g className="diagram-node-group"><polygon className="diagram-node diagram-node-manage" points="235,550 304,590 304,670 235,710 166,670 166,590"/><text x="235" y="637" className="diagram-label">MANAGE</text></g>
+            <g className="diagram-node-group"><polygon className="diagram-node diagram-node-sustain" points="134,234 203,274 203,354 134,394 65,354 65,274"/><text x="134" y="312" className="diagram-label">SUSTAIN</text></g>
+            <polygon className="diagram-core" points="400,255 526,327 526,473 400,545 274,473 274,327"/><text x="400" y="390" className="diagram-core-label"><tspan x="400">HUMAN</tspan><tspan x="400" dy="34">IN THE LEAD</tspan></text>
+          </svg>
         </div>
       </section>
 

@@ -154,7 +154,7 @@ export default function Home() {
                 </>}
                 <ul>{step.bullets.map(item => <li key={item}>{item}</li>)}</ul>
                 <p className="step-close">{step.close}</p>
-                <a className="arrow-link" href="#contact">{step.cta} <span aria-hidden="true">↗</span></a>
+                <a className="arrow-link" href={step.id === 'emotional-intelligence' ? '/emotional-intelligence/p/emotional-intelligence-msceit-assessment-coaching-session-e9g35' : '#contact'}>{step.cta} <span aria-hidden="true">↗</span></a>
               </div>
             </article>
           ))}

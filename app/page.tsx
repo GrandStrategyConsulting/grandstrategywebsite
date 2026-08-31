@@ -1,4 +1,5 @@
 import ContactForm from './contact-form';
+import TestimonialCarousel from './testimonial-carousel';
 
 const navItems = [
   ['AI Readiness', '#readiness'], ['AI Skills Workshops', '#skills'],
@@ -164,6 +165,7 @@ export default function Home() {
                 <p className="step-intro">{step.text}</p>
                 {step.id === 'emotional-intelligence' && <>
                   <div className="step-media-row"><div className="step-certification"><img src="/msceit2-certified.png" alt="MHS MSCEIT 2 Certified" /></div><div className="step-playlist"><iframe src="https://www.youtube-nocookie.com/embed/videoseries?list=PLcaD4ZHbCmLtK9BBzSVN3bbCSznDAx8Ys&rel=0" title="MSCEIT emotional intelligence video playlist" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen /></div></div>
+                  <TestimonialCarousel />
                   <div className="credential-awards">
                     <h4>Professional credential credits awarded</h4>
                     <table aria-label="MSCEIT 2 credential credits awarded">

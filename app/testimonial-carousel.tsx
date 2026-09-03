@@ -63,7 +63,7 @@ export default function TestimonialCarousel() {
   return (
     <section className="testimonial-carousel" aria-labelledby="testimonial-title">
       <div className="testimonial-heading">
-        <p className="testimonial-kicker">Cohort member experience</p>
+        <p className="testimonial-kicker">MSCEIT2 Feedback</p>
         <h4 id="testimonial-title">Assessment insight that becomes practical leadership value.</h4>
         <p>Every cohort member receives an MSCEIT® 2 assessment and individual feedback session.</p>
       </div>

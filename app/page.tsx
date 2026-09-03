@@ -23,7 +23,7 @@ const pathway = [
     cta: 'Start with the readiness survey', tone: 'cyan',
   },
   {
-    number: '02', kicker: 'Strengthen leadership judgment', id: 'emotional-intelligence', title: 'MSCEIT® 2 Emotional Intelligence Assessments',
+    number: '02', kicker: 'Strengthen leadership judgment', id: 'emotional-intelligence', title: 'MSCEIT® 2 Emotional Intelligence Assessments & Certification Programs',
     text: 'AI adoption creates decisions that technology alone cannot make. Leaders must know when to trust an output, when to challenge it and how to lead people through the emotional reality of change.',
     bullets: ['Recognize emotional information influencing decisions', 'Respond more effectively under pressure', 'Understand how emotions affect attention, risk and judgment', 'Navigate resistance with curiosity rather than dismissal', 'Communicate change with clarity and compassion', 'Create healthier conditions for learning and experimentation'],
     close: 'The ability-based MSCEIT® 2 assessment, paired with Emotional Maths® feedback and coaching, measures how effectively leaders perceive, connect, understand and manage emotions.',

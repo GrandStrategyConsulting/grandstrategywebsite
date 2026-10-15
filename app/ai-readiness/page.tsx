@@ -1,12 +1,12 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'AI Workforce Readiness Training | Grand Strategy Consulting',
-  description: 'AI Access Is Not AI Readiness. Explore the $10,000 AI-Ready Workforce Accelerator: 50 books, a masterclass, two facilitated learning circles and an outcomes brief.',
+  title: '90-Day AI Fluency Pilot | Grand Strategy Consulting',
+  description: 'A $9,997, 90-day AI fluency pilot for global teams, built on the method used in Fortune 100 Copilot training.',
   alternates: { canonical: 'https://www.grandstrategy.llc/ai-readiness' },
   openGraph: {
-    title: 'AI Access Is Not AI Readiness | Grand Strategy Consulting',
-    description: 'Turn AI access into workforce readiness with practical training, learning circles and the Stop Wasting Time With AI book.',
+    title: 'Your people have AI licenses. Do they have AI judgment?',
+    description: 'Move from AI access to workforce judgment with a $9,997 pilot and a pathway to business-unit and enterprise adoption.',
     url: 'https://www.grandstrategy.llc/ai-readiness',
     type: 'website',
   },
@@ -24,7 +24,7 @@ export default function AIReadinessPage() {
   return (
     <iframe
       src="/ai-readiness-original.html"
-      title="AI Access Is Not AI Readiness — Grand Strategy Consulting"
+      title="90-Day AI Fluency Pilot | Grand Strategy Consulting"
       style={{
         position: 'fixed',
         inset: 0,

@@ -80,7 +80,7 @@ export default function CapabilityStatementPage() {
           <p className={styles.sectionLabel}>Start a conversation</p>
           <h2>Need a capability partner for AI adoption and workforce transformation?</h2>
         </div>
-        <Link href="/#contact">Contact Grand Strategy <span aria-hidden="true">↗</span></Link>
+        <a href="mailto:hello@grandstrategy.llc">Contact Grand Strategy <span aria-hidden="true">↗</span></a>
       </section>
 
       <footer>

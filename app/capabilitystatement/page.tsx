@@ -47,7 +47,7 @@ export default function CapabilityStatementPage() {
           <p>Review Grand Strategy Consulting&apos;s core capabilities, relevant delivery experience, key personnel and federal company data in one concise document.</p>
           <div className={styles.actions}>
             <a className={styles.primaryAction} href={documentUrl} download>Download capability statement <span aria-hidden="true">↓</span></a>
-            <a className={styles.secondaryAction} href={documentUrl} target="_blank" rel="noreferrer">View PDF in browser <span aria-hidden="true">↗</span></a>
+            <a className={styles.secondaryAction} href="#document-preview-title">View document below <span aria-hidden="true">↓</span></a>
           </div>
           <p className={styles.fileNote}>PDF · 1 page · Last updated November 2026</p>
         </div>
@@ -64,13 +64,11 @@ export default function CapabilityStatementPage() {
           </div>
         </div>
         <figure className={styles.preview}>
-          <a href={documentUrl} target="_blank" rel="noreferrer" aria-label="Open the Grand Strategy Consulting Federal Capability Statement PDF">
-            <Image src="/grand-strategy-consulting-federal-capability-statement-preview.png" width={1275} height={1650} alt="Preview of the Grand Strategy Consulting Federal Capability Statement" />
-          </a>
-          <figcaption>Select the preview to open the full PDF.</figcaption>
+          <Image src="/grand-strategy-consulting-federal-capability-statement-preview.png" width={1275} height={1650} alt="Preview of the Grand Strategy Consulting Federal Capability Statement" />
+          <figcaption>Full capability statement preview.</figcaption>
         </figure>
         <div className={styles.mobileDownload}>
-          <p>PDF previews may not display on every mobile device.</p>
+          <p>To save a copy to your device:</p>
           <a href={documentUrl} download>Download the PDF</a>
         </div>
       </section>

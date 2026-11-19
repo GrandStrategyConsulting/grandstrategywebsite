@@ -62,7 +62,6 @@ export default function CapabilityStatementPage() {
             <p className={styles.sectionLabel}>Document preview</p>
             <h2 id="document-preview-title">Read it here or save a copy.</h2>
           </div>
-          <p>The page URL stays the same for your QR code, while the downloadable PDF can be updated when your capability statement changes.</p>
         </div>
         <figure className={styles.preview}>
           <a href={documentUrl} target="_blank" rel="noreferrer" aria-label="Open the Grand Strategy Consulting Federal Capability Statement PDF">

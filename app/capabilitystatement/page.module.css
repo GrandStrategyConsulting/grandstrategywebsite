@@ -133,10 +133,6 @@
 }
 
 .previewIntro {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(320px, .55fr);
-  gap: 50px;
-  align-items: end;
   margin-bottom: 48px;
 }
 
@@ -148,13 +144,6 @@
   font-weight: 520;
   letter-spacing: -.045em;
   line-height: 1.03;
-}
-
-.previewIntro > p {
-  margin: 0;
-  color: #58697a;
-  font-size: 17px;
-  line-height: 1.65;
 }
 
 .preview {
@@ -248,7 +237,6 @@
     display: none;
   }
 
-  .previewIntro,
   .contactBand {
     grid-template-columns: 1fr;
     align-items: start;
@@ -280,10 +268,6 @@
   .previewSection,
   .contactBand {
     padding-inline: 20px;
-  }
-
-  .previewIntro {
-    gap: 26px;
   }
 
   .mobileDownload {

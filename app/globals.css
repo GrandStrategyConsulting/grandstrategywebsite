@@ -84,6 +84,60 @@ h2 { margin: 0; max-width: 910px; font-size: clamp(40px,5vw,76px); line-height: 
 .step-close { max-width: 750px; margin: 25px 0 0; color: #899aae; font-size: 14px; line-height: 1.6; }
 .step-actions { display:flex; flex-wrap:wrap; gap:20px 28px; margin-top:30px; }.step-actions .arrow-link { margin-top:0; }
 .arrow-link { display: inline-flex; gap: 14px; align-items: center; margin-top: 28px; padding-bottom: 8px; border-bottom: 1px solid var(--accent); color: white; font-size: 11px; font-weight: 800; letter-spacing: .1em; text-transform: uppercase; }.arrow-link span { color: var(--accent); font-size: 17px; }
+.survey-enquiry {
+  max-width: 750px;
+  margin-top: 30px;
+  padding: clamp(18px, 3vw, 32px);
+  border: 1px solid rgba(25, 189, 242, .35);
+  background: rgba(8, 28, 48, .74);
+  scroll-margin-top: 24px;
+}
+
+.survey-enquiry h4 {
+  margin: 0;
+  color: #f7f9fc;
+  font-size: clamp(1.16rem, 2vw, 1.5rem);
+  font-weight: 600;
+  line-height: 1.25;
+}
+
+.survey-enquiry p {
+  max-width: 55ch;
+  margin: 12px 0 20px;
+  color: #c2ccda;
+  font-size: 1rem;
+  line-height: 1.55;
+}
+
+.survey-enquiry-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px 18px;
+}
+
+.survey-enquiry-actions span {
+  color: #c2ccda;
+  font-size: .875rem;
+  overflow-wrap: anywhere;
+}
+
+.survey-enquiry .button {
+  min-height: 48px;
+  max-width: 100%;
+  padding: 12px 16px;
+  font-size: .875rem;
+  letter-spacing: 0;
+  text-align: center;
+  text-transform: none;
+  white-space: normal;
+}
+
+.survey-enquiry .button:focus-visible {
+  outline: 2px solid #f7f9fc;
+  outline-offset: 3px;
+}
+
 .step-media-row { display: grid; grid-template-columns: 210px minmax(300px,1fr); gap: 24px; align-items: center; width: min(100%,780px); margin: 0 0 30px; }
 .step-certification { width: 100%; padding: 10px; border: 1px solid rgba(255,255,255,.18); border-radius: 8px; background: #fff; box-shadow: 0 18px 45px rgba(0,0,0,.2); }
 .step-certification img { display: block; width: 100%; height: auto; }

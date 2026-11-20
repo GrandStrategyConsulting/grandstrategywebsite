@@ -1,6 +1,9 @@
 import ContactForm from './contact-form';
 import TestimonialCarousel from './testimonial-carousel';
 
+const surveyEnquiryAddress = 'mela@grandstrategy.llc';
+const surveyEnquiryLink = `mailto:${surveyEnquiryAddress}?subject=${encodeURIComponent('15-minute Six Dimensions survey conversation')}`;
+
 const navItems = [
   ['AI Readiness', '#readiness'], ['AI Skills Workshops', '#skills'],
   ['AI Learning Circles', '#circles'], ['Emotional Intelligence', '#emotional-intelligence'],
@@ -21,7 +24,7 @@ const pathway = [
     text: 'Before introducing another tool or training program, we assess whether the organizational environment can support meaningful change.',
     bullets: ['Empowered to make decisions and apply new skills', 'Safe to experiment, question and admit uncertainty', 'Respected for the professional judgment they bring', 'Supported with appropriate leadership, guidance and resources', 'Acknowledged when they raise concerns, needs or ideas', 'Connected to colleagues, purpose and shared learning'],
     close: 'The results reveal the cultural, emotional and systemic barriers that could prevent AI adoption from translating into performance.',
-    cta: 'Start with the readiness survey', tone: 'cyan',
+    tone: 'cyan',
   },
   {
     number: '02', kicker: 'Strengthen leadership judgment', id: 'emotional-intelligence', title: 'MSCEIT® 2 Emotional Intelligence Assessments',
@@ -177,7 +180,21 @@ export default function Home() {
                 </>}
                 <ul>{step.bullets.map(item => <li key={item}>{item}</li>)}</ul>
                 <p className="step-close">{step.close}</p>
-                <div className="step-actions"><a className="arrow-link" href={step.id === 'emotional-intelligence' ? '/emotional-intelligence/p/emotional-intelligence-msceit-assessment-coaching-session-e9g35' : '#contact'}>{step.cta} <span aria-hidden="true">↗</span></a>{step.id === 'transformation' && <a className="arrow-link" href="/ai-workflow-solutions">Understand our workflow redesign options <span aria-hidden="true">↗</span></a>}</div>
+                {step.id === 'readiness' ? (
+                  <section className="survey-enquiry" id="survey-enquiry" aria-labelledby="survey-enquiry-title">
+                    <h4 id="survey-enquiry-title">Request a 15-minute conversation</h4>
+                    <p>Bring one decision about your orchestra’s people or next season. Mela Toro Waters can help you decide whether the Six Dimensions survey fits. There’s no commitment.</p>
+                    <div className="survey-enquiry-actions">
+                      <a className="button primary" href={surveyEnquiryLink}>Email Mela to request a time</a>
+                      <span>{surveyEnquiryAddress}</span>
+                    </div>
+                  </section>
+                ) : (
+                  <div className="step-actions">
+                    <a className="arrow-link" href={step.id === 'emotional-intelligence' ? '/emotional-intelligence/p/emotional-intelligence-msceit-assessment-coaching-session-e9g35' : '#contact'}>{step.cta} <span aria-hidden="true">↗</span></a>
+                    {step.id === 'transformation' && <a className="arrow-link" href="/ai-workflow-solutions">Understand our workflow redesign options <span aria-hidden="true">↗</span></a>}
+                  </div>
+                )}
               </div>
             </article>
           ))}

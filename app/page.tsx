@@ -2,7 +2,7 @@ import ContactForm from './contact-form';
 import TestimonialCarousel from './testimonial-carousel';
 
 const surveyEnquiryAddress = 'mela@grandstrategy.llc';
-const surveyEnquiryLink = `mailto:${surveyEnquiryAddress}?subject=${encodeURIComponent('15-minute Six Dimensions survey conversation')}`;
+const surveyEnquiryLink = `mailto:${surveyEnquiryAddress}?subject=${encodeURIComponent('15-minute Six Dimensions Culture Survey conversation')}`;
 
 const navItems = [
   ['AI Readiness', '#readiness'], ['AI Skills Workshops', '#skills'],
@@ -20,7 +20,7 @@ const needs = [
 
 const pathway = [
   {
-    number: '01', kicker: 'Measure readiness', id: 'readiness', title: 'Six Dimensions Employee Engagement and Change Readiness Survey',
+    number: '01', kicker: 'Measure readiness', id: 'readiness', title: 'Six Dimensions Culture Survey',
     text: 'Before introducing another tool or training program, we assess whether the organizational environment can support meaningful change.',
     bullets: ['Empowered to make decisions and apply new skills', 'Safe to experiment, question and admit uncertainty', 'Respected for the professional judgment they bring', 'Supported with appropriate leadership, guidance and resources', 'Acknowledged when they raise concerns, needs or ideas', 'Connected to colleagues, purpose and shared learning'],
     close: 'The results reveal the cultural, emotional and systemic barriers that could prevent AI adoption from translating into performance.',
@@ -183,7 +183,7 @@ export default function Home() {
                 {step.id === 'readiness' ? (
                   <section className="survey-enquiry" id="survey-enquiry" aria-labelledby="survey-enquiry-title">
                     <h4 id="survey-enquiry-title">Request a 15-minute conversation</h4>
-                    <p>Bring one decision about your orchestra’s people or next season. Mela Toro Waters can help you decide whether the Six Dimensions survey fits. There’s no commitment.</p>
+                    <p>Bring one decision about your orchestra’s people or next season. Mela Toro Waters can help you decide whether the Six Dimensions Culture Survey fits. There’s no commitment.</p>
                     <div className="survey-enquiry-actions">
                       <a className="button primary" href={surveyEnquiryLink}>Email Mela to request a time</a>
                       <span>{surveyEnquiryAddress}</span>

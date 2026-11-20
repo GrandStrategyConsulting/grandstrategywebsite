@@ -4,7 +4,7 @@ import { useState, type FormEvent } from 'react';
 
 const topics = [
   'AI Readiness Assessment',
-  'Six Dimensions Employee Engagement Survey',
+  'Six Dimensions Culture Survey',
   'AI Skills Workshops',
   'AI Learning Circles',
   'Emotional Intelligence and MSCEIT® 2',

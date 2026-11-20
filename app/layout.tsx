@@ -12,7 +12,7 @@ const poppins = Poppins({
 export const metadata: Metadata = {
   metadataBase: new URL('https://www.grandstrategy.llc'),
   title: 'AI Workforce Transformation, Skills and Change Readiness | Grand Strategy Consulting',
-  description: 'Grand Strategy Consulting helps organizations assess AI readiness, build role-specific AI skills, strengthen emotional intelligence and sustain adoption through Learning Circles, employee engagement surveys and change support.',
+  description: 'Grand Strategy Consulting helps organizations assess AI readiness, build role-specific AI skills, strengthen emotional intelligence and sustain adoption through Learning Circles, the Six Dimensions Culture Survey and change support.',
   openGraph: {
     title: 'AI Access Is Not AI Readiness | Grand Strategy Consulting',
     description: 'Build a workforce that can use AI well and lead the change around it.',

@@ -1,12 +1,11 @@
 import type { Metadata } from 'next';
 import Image from 'next/image';
-import Link from 'next/link';
 import styles from './page.module.css';
 
 const documentUrl = '/grand-strategy-consulting-federal-capability-statement.pdf';
 
 const navItems = [
-  ['AI Readiness', '/#readiness'],
+  ['AI Readiness', '/ai-readiness'],
   ['AI Skills Workshops', '/#skills'],
   ['AI Learning Circles', '/#circles'],
   ['Emotional Intelligence', '/#emotional-intelligence'],
@@ -26,17 +25,30 @@ function Brand() {
 }
 
 export default function CapabilityStatementPage() {
+  const navigationLinks = navItems.map(([label, href]) => {
+    const isCurrentPage = href === '/capabilitystatement';
+
+    return (
+      <a
+        key={href}
+        href={href}
+        className={isCurrentPage ? styles.activeNav : undefined}
+        aria-current={isCurrentPage ? 'page' : undefined}
+      >
+        {label}
+      </a>
+    );
+  });
+
   return (
     <main className={styles.statementPage}>
       <header className="site-header">
-        <Link className="brand" href="/" aria-label="Grand Strategy home"><Brand /><span>Grand Strategy</span></Link>
-        <nav aria-label="Primary navigation">
-          {navItems.map(([label, href]) => <Link className={href === '/capabilitystatement' ? styles.activeNav : undefined} href={href} key={href}>{label}</Link>)}
-        </nav>
-        <Link className="nav-cta" href="/#contact">Assess our readiness</Link>
+        <a className="brand" href="/" aria-label="Grand Strategy home"><Brand /><span>Grand Strategy</span></a>
+        <nav aria-label="Primary navigation">{navigationLinks}</nav>
+        <a className="nav-cta" href="/#contact">Assess our readiness</a>
         <details className="mobile-menu">
           <summary aria-label="Open navigation"><span /><span /><span /></summary>
-          <div>{navItems.map(([label, href]) => <Link href={href} key={href}>{label}</Link>)}<Link href="/#contact">Assess our readiness</Link></div>
+          <div>{navigationLinks}<a href="/#contact">Assess our readiness</a></div>
         </details>
       </header>
 
@@ -82,9 +94,9 @@ export default function CapabilityStatementPage() {
       </section>
 
       <footer>
-        <Link className="brand" href="/"><Brand /><span>Grand Strategy</span></Link>
+        <a className="brand" href="/"><Brand /><span>Grand Strategy</span></a>
         <p>Human-centered transformation for the AI era.</p>
-        <div><Link href="/#readiness">AI readiness</Link><Link href="/#skills">AI skills</Link><Link href="/#about">About</Link><Link href="/capabilitystatement">Capability statement</Link></div>
+        <div><a href="/ai-readiness">AI readiness</a><a href="/#skills">AI skills</a><a href="/#about">About</a><a href="/capabilitystatement" aria-current="page">Capability statement</a></div>
         <p className="copyright">© {new Date().getFullYear()} Grand Strategy Consulting LLC</p>
       </footer>
     </main>
